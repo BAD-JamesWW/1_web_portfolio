@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="fanta.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">James Walter Wright</a>
+        <nav>
+            <a target="_blank" href="https://github.com/BAD-JamesWW"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/james-wright-4b264b33b/"><i class="fa-brands fa-square-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hey! I'm James ^_^</h1>
+                <p>Software Engineer passionate about technology</p>
+            </div>
+            <h5 class="intro-description">
+                Qualified Software Engineer with a passion for technology and problem-solving. Based in 
+                Dayton, Ohio, I enjoy building useful software, continually sharpening my skills, and 
+                exploring creative ideas in both coding and gaming. 
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:jameswright20workemail@gmail.com">Email me</a>
+                <a target="_blank" href="https://github.com/BAD-JamesWW">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/james-wright-4b264b33b/">LinkedIn</a>
+            </div>
+            <div id="something-cool">
+                <button onclick="doSomethingCool()">You wanna see something cool?</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a vibe</h4>
+                <p style="display: none;">Beautiful!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#000000" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <head>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <td>Dev Fundamentals</td>
+                        <td>Agile methodology | SOLID principles | MVC pattern</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>HTML | CSS | JavaScript | ReactJS | FantaCSS</td>
+                    </tr>
+                    <tr>
+                        <td>Game Dev</td>
+                        <td>Unity | Unreal Engine | Godot</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>DearPyGui | Vosk | Data management & visualization</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>08-05-2025</p>
+                        <h4>O.P.S. - Operational Preparedness System</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>DearPyGui</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Vosk</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Data management & visualization</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>MVC pattern</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>SOLID principles</p>
+                            </div>
+                        </div>
+                        <p>
+                        O.P.S is a modular, training tool designed to allow users to train deployment times with any piece of gear where speed is paramount.
+                        Deployment data is tracked and viewable via an integrated graph.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/BAD-JamesWW/BAD_OPS/releases/tag/v1.0.0">GitHub</a>
+                        </div>
+                        <div class="img-div">
+                        <img class="big-img" src="public/ops_program.png" alt="ops_thumbnail" />
+                        </div>
+                    
+                        <p class="project-date">09-28-2025</p>
+                        <h4>Workout Program</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                        </div>
+                        <p>
+                        A 30 Simple Workouts Training Planner
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://jww-workoutprogram.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/BAD-JamesWW/2_workout_program">GitHub</a>
+                        </div>
+                        <div class="img-div">
+                        <img class="big-img" src="public/workout_program.png" alt="workoutprogram_thumbnail" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a target="_blank" href="https://github.com/BAD-JamesWW">JamesWW</a>⭐ the repo on <a target="_blank" href="">GitHub</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

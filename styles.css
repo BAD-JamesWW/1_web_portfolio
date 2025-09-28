@@ -1,0 +1,134 @@
+/*CSS layout should correlate with the .html that uses it */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------------------------*/
+
+header, 
+main, 
+footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; /* So the content auto centers. */
+    padding: 2rem;
+}
+
+header{
+    display: flex; /*So content is horizontal.*/
+    align-items: center; /*So content is aligned vertically */
+    justify-content: space-between; /*So any direct children are spaced out with even spaces in between each element.*/
+    gap: 1rem; /*So if content is pressed together it will maintain a gap of 1rem */
+}
+
+/*---------------------------------------------*/
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+/*---------------------------------------------*/
+
+main,
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    gap: 4rem;
+}
+
+section{
+    gap: 1rem;
+}
+
+/*---------------------------------------------*/
+.intro-header p {
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width: 500px; /* good setting for mobile and also isn't too long on non-mobile*/
+    /*left is default alignment which is what we want for this desc in correspondence to its parent.*/
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0; /*Nrem veritcally and 0 horizontally*/
+}
+
+.link-arrow {
+    color: var(--color-link); /*Using a var from fata.css for links*/
+    transform: rotate(-45deg);
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-date {
+    padding-top: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap; /*so if the content overflows the screen it will just wrap down to the next line*/
+    padding: 0.25rem 0;
+}
+.tech-list div {
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);/*nice visual rounding using another fanta.css style*/
+}
+.tech-list p{
+    font-size: 0.8rem;
+}
+
+/*media queries dictate what styles apply to your content
+at what screen sizes.*/
+/*so when the width of the page is greater than N px it will override
+previous styles with any of the ones applied in the scope
+*/
+@media (min-width: 640px){
+    .project-card {
+        flex-direction: row;
+    }
+    .project-card img-div {
+        max-width: 30%; /*So the element only grows up to N% of its parent*/
+    }
+}
